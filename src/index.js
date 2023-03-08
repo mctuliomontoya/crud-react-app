@@ -1,6 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import {Button} from "./Button";
+import { DualButton } from "./components/DualButton";
 import {Navbar} from "./components/Navbar"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,8 +14,8 @@ root.render(
     <>
     <Navbar title="SISWEB"/>
     <Greeting />
-    <Button text="Hola"/>
-    <Button text="Hola 2"/>
-    <Button text="andre"/>
+    <DualButton text="Push Me!" style={true}/>
+    
+    <DualButton text="Push Me!" style={false}/>
     </>
 );
