@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import {Button} from "./Button";
 import { DualButton } from "./components/DualButton";
 import {Navbar} from "./components/Navbar"
+import "./styles/styles.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

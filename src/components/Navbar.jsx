@@ -3,7 +3,7 @@ import './../styles/navbar.css'
 
 export function Navbar({ title }) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark ">
+    <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container-fluid">
         <div className="d-flex flex-grow-1">
           <span className="w-100 d-lg-none d-block"></span>
