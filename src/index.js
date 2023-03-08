@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {Button} from "./Button";
+import {Product} from "./components/ProductTab";
 import { DualButton } from "./components/DualButton";
 import {Navbar} from "./components/Navbar"
 import "./styles/styles.css";
@@ -14,7 +14,7 @@ function Greeting() {
 root.render(
     <>
     <Navbar title="SISWEB"/>
-    <Greeting />
+    <Product/>
     <DualButton text="Push Me!" style={true}/>
     
     <DualButton text="Push Me!" style={false}/>
