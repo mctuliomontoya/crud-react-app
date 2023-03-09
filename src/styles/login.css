@@ -1,0 +1,62 @@
+.login-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #7749F8;
+  }
+  
+  .form-signin{
+    border: 1px solid #CED4DA;
+    border-radius: 5px;
+    padding: 3em 0em;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .form-signin h1{
+    font-family: 'Inter';
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  .form-signin p{
+    font-family: 'Inter';
+    color: #B4B0B0;
+  }
+  
+  .form-signin .error-msg{
+    color:red;
+  }
+  
+  .form-signin label{
+    font-family: 'Inter';
+    color: #343A40;
+  }
+  
+  .form-signin input{
+    font-family: 'Inter';
+    border-radius: 4px;
+    border: 1px #CED4DA solid;
+    margin-bottom:1em;
+  }
+  
+  .form-signin .btn-primary{
+    font-family: 'Inter';
+    background-color: #7749F8;
+    margin-top: 1em;
+    padding: .4em 3.5em;
+    border: 1px white solid;
+  }
+  
+  .form-signin .btn-primary:hover{
+    background-color: white;
+    color: black;
+    border: 1px black solid;
+  }
+  
+  .form-signin .btn-primary:active{
+    background-color: #7749F8;
+    color: black;
+    border: 1px black solid;
+  }
