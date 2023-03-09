@@ -18,7 +18,7 @@ function Shop() {
     <main>
     <Greeting/>
     <hr></hr>
-        <div class="content">
+        <div className="content">
             <div>
                 <ItemCard ID="COS01" name="Sephora Skin Care - 1 u" stock="4" price="45.50" imageUrl="./../public/cosmetic.png"/>
                 <ItemCard ID="COS01" name="Sephora Skin Care - 1 u" stock="4" price="45.50" imageUrl="./../public/cosmetic.png"/>
