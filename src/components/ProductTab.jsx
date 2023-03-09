@@ -4,10 +4,6 @@ export function Product() {
     return (
         <div className="my-5">
             <div className="container">
-
-                                                            
-                    
-
                     <BasicExample/>
                 </div>
             </div>

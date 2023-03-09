@@ -10,21 +10,21 @@ function BasicExample() {
     <Form>
       <div className="row">
         <div className="col-md-5">
-          <ImagePrev />
+          <ImagePrev/>
         </div>
         <div className="col-md-7">
           <div className="row">
             <div className="col-md-6">
               <Form.Group className="mb-3" controlId="formBasicID">
                 <Form.Label>ID</Form.Label>
-                <Form.Control type="text" placeholder="" />
+                <Form.Control type="text" placeholder="" required/>
               </Form.Group>
             </div>
             <div className="col-md-6">
               <Form.Group className="mb-3" controlId="formBasicType">
                 <Form.Label>Type</Form.Label>
-                <Form.Select aria-label="Default select example">
-                  <option>Open this select menu</option>
+                <Form.Select aria-label="Default select example" required>
+                  <option value=""></option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
@@ -35,7 +35,7 @@ function BasicExample() {
           <div className="row">
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="" />
+              <Form.Control type="text" placeholder="" required/>
             </Form.Group>
           </div>
           <div className="row">
@@ -43,7 +43,7 @@ function BasicExample() {
               <Form.Group className="mb-3" controlId="formBasicID">
                 <Form.Label>Price</Form.Label>
                 <InputGroup className="mb-3">
-                  <Form.Control aria-label="Amount (to the nearest dollar)" />
+                  <Form.Control aria-label="Amount (to the nearest dollar)"required />
                   <InputGroup.Text>USD</InputGroup.Text>
                 </InputGroup>
               </Form.Group>
@@ -51,20 +51,21 @@ function BasicExample() {
             <div className="col-md-6">
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>In Stock</Form.Label>
-                <Form.Control type="text" placeholder="" />
+                <Form.Control type="text" placeholder="" required/>
               </Form.Group>
             </div>
           </div>
         </div>
       </div>
       <hr />
-      <div className="row text-right">
-        <div className="col-md-11">
-          <DualButton text="Save" style="light" />
+      <div className="d-flex flex-row-reverse">
+      <div className="p-2">
+          <DualButton text="Cancel" style={false} />
         </div>
-        <div className="col-md-1">
-          <DualButton text="Cancel" style="dark" />
+        <div className="p-2">
+          <DualButton text="Save" style={true} />
         </div>
+        
       </div>
 
 

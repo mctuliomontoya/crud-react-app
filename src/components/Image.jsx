@@ -1,6 +1,7 @@
 // App.js
 // Kindacode.com
 import { useState } from "react";
+import Form from "react-bootstrap/Form";
 
 const ImagePrev = () => {
   const [selectedImage, setSelectedImage] = useState();
@@ -19,26 +20,22 @@ const ImagePrev = () => {
 
   return (
     <>
-      
-
-        {selectedImage && (
-          <div style={styles.preview}>
-            <img
-              src={URL.createObjectURL(selectedImage)}
-              style={styles.image}
-              alt="Thumb"
-            />
-            <button onClick={removeSelectedImage} style={styles.delete}>
-              Remove This Image
-            </button>
-          </div>
-        )}
-        <div style={styles.container}>
-        <input
-          accept="image/*"
-          type="file"
-          onChange={imageChange}
-        />
+      {selectedImage && (
+        <div style={styles.preview}>
+          <img
+            src={URL.createObjectURL(selectedImage)}
+            style={styles.image}
+            alt="Thumb"
+          />
+          <button onClick={removeSelectedImage} style={styles.delete}>
+            Remove This Image
+          </button>
+        </div>
+      )}
+      <div style={styles.container}>
+        <Form.Group controlId="formFile" className="mb-3">
+          <Form.Control type="file" accept="image/*" onChange={imageChange} />
+        </Form.Group>
       </div>
     </>
   );
@@ -68,4 +65,4 @@ const styles = {
     color: "white",
     border: "none",
   },
-};  
+};
