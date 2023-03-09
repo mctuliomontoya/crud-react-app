@@ -50,29 +50,29 @@ class Login extends React.Component{
 
     render() {
         return(
-            <div class="login-parent">
-                <div class="form-signin container">
+            <div className="login-parent">
+                <div className="form-signin container">
                 {this.state.logged && (
                     <Navigate to="/products" replace={true}/>
                 )}
                 <form>
                     <h1>WELCOME TO SISWEB</h1>
                     <p>Please, sign in</p>
-                    <label for="username">Username</label>
+                    <label htmlFor="username">Username</label>
                     <br></br>
                     <input type="text" 
                     id="username"
                     onChange={(event) => this.setUsername(event.target.value)}></input>
                     <br></br>
-                    <label for="password">Password</label>
+                    <label htmlFor="password">Password</label>
                     <br></br>
                     <input type="password"
                     id="password"
                     onChange={(event) => this.setPassword(event.target.value)}></input>
                     <br></br>
-                    <button class="btn btn-primary"
+                    <button className="btn btn-primary"
                     onClick={(event) => this.handleLogin(event)}>SIGN IN</button>
-                    <p class="error-msg">{this.state.errorMessage}</p>
+                    <p className="error-msg">{this.state.errorMessage}</p>
                 </form>
              </div>
             </div>
