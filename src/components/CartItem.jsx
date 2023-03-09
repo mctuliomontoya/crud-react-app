@@ -2,13 +2,13 @@ import '../styles/shop.css'
 
 export function CartItem({ID, qty, title, price}) {
     return (
-        <div class="cartItem">
-            <div class="itemTitle">
+        <div className="cartItem">
+            <div className="itemTitle">
                 <input type="checkbox" name="" id={ID}/>
-                <div class="text">
+                <div className="text">
                     {qty}
                 </div>
-                <div class="text">
+                <div className="text">
                     {title}
                 </div>
             </div>
