@@ -1,5 +1,6 @@
 // Navbar.js
 import './../styles/navbar.css'
+import Button from "react-bootstrap/Button";
 
 export function Navbar({ title }) {
   return (
@@ -28,25 +29,25 @@ export function Navbar({ title }) {
         >
           <ul className="navbar-nav mx-auto flex-nowrap">
             <li className="nav-item">
-              <a href="#" className="nav-link">
-                Link
+              <a href="./products" className="nav-link">
+                Products
               </a>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
-                Link
+              <a href="./shop" className="nav-link">
+                Shop
               </a>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
-                Link
-              </a>
+              <button
+                type="button"
+                className="btn btn-outline-light btn-md"
+              >
+                <a href="./">Logout</a>
+              </button>
+
             </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link">
-                Link
-              </a>
-            </li>
+
           </ul>
         </div>
       </div>
