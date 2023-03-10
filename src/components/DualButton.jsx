@@ -4,6 +4,7 @@ export function DualButton({ text, style }) {
   return (
     <div>
       <button
+        type="cancel"
         onClick={function () {
           console.log("Hola mundo");
         }}

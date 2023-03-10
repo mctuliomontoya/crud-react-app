@@ -4,38 +4,39 @@ import InputGroup from "react-bootstrap/InputGroup";
 import { DualButton } from "./DualButton";
 import ImagePrev from "./Image";
 
-
 function BasicExample() {
   return (
     <Form>
       <div className="row">
         <div className="col-md-5">
-          <ImagePrev/>
+          <ImagePrev />
         </div>
         <div className="col-md-7">
           <div className="row">
             <div className="col-md-6">
               <Form.Group className="mb-3" controlId="formBasicID">
                 <Form.Label>ID</Form.Label>
-                <Form.Control type="text" placeholder="" required/>
+                <Form.Control type="text" placeholder="" required />
               </Form.Group>
             </div>
             <div className="col-md-6">
-              <Form.Group className="mb-3" controlId="formBasicType">
-                <Form.Label>Type</Form.Label>
-                <Form.Select aria-label="Default select example" required>
-                  <option value=""></option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </Form.Select>
+              <Form.Group className="mb-3" controlId="custom-select">
+                <Form.Label>Customized Select</Form.Label>
+                <Form.Control as="select" className="rounded-2 ">
+                  <option className="d-none" value="">
+                    Select Option
+                  </option>
+                  <option value="Cosmetic">Cosmetic</option>
+                  <option value="Beauty">Beauty</option>
+                  <option value="Cleaning">Cleaning</option>
+                </Form.Control>
               </Form.Group>
             </div>
           </div>
           <div className="row">
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="" required/>
+              <Form.Control type="text" placeholder="" required />
             </Form.Group>
           </div>
           <div className="row">
@@ -43,7 +44,10 @@ function BasicExample() {
               <Form.Group className="mb-3" controlId="formBasicID">
                 <Form.Label>Price</Form.Label>
                 <InputGroup className="mb-3">
-                  <Form.Control aria-label="Amount (to the nearest dollar)"required />
+                  <Form.Control
+                    aria-label="Amount (to the nearest dollar)"
+                    required
+                  />
                   <InputGroup.Text>USD</InputGroup.Text>
                 </InputGroup>
               </Form.Group>
@@ -51,7 +55,7 @@ function BasicExample() {
             <div className="col-md-6">
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>In Stock</Form.Label>
-                <Form.Control type="text" placeholder="" required/>
+                <Form.Control type="text" placeholder="" required />
               </Form.Group>
             </div>
           </div>
@@ -59,15 +63,13 @@ function BasicExample() {
       </div>
       <hr />
       <div className="d-flex flex-row-reverse">
-      <div className="p-2">
+        <div className="p-2">
           <DualButton text="Cancel" style={false} />
         </div>
         <div className="p-2">
           <DualButton text="Save" style={true} />
         </div>
-        
       </div>
-
 
       {/* <Button variant="primary" type="submit">
         Submit
