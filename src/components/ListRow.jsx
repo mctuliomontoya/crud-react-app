@@ -39,11 +39,11 @@ export function ListRow(){
                     <td>{item.type}</td>
                     <td>{item.name}</td>
                     <td>${item.price}</td>
-                    <td class="ListStock">{item.stock}</td>
+                    <td className="ListStock">{item.stock}</td>
                     <td>
                         <img src={StockImage} alt={StockImage} width="25px"/>
                         <img src={Edit} alt={Edit} width="25px"/>
-                        <button class="IconButton" onClick={() => ConfirmDelete(item)}><img src={Trash} alt="Trash" width="25px"/></button>
+                        <button className="IconButton" onClick={() => ConfirmDelete(item)}><img src={Trash} alt="Trash" width="25px"/></button>
                     </td>
                 </tr>
             ))}

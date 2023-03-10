@@ -11,13 +11,13 @@ function List() {
   return(
     <>
     <Navbar title="SISWEB" />
-    <div class="container text-start col-md-10 offset-md-1">
-      <h1 class="my-4 justify-content-center ms-0">Products</h1>
+    <div className="container text-start col-md-10 offset-md-1">
+      <h1 className="my-4 justify-content-center ms-0">Products</h1>
       <hr></hr>
-      <button type="button" class="CreateNewRowButton my-3">ADICIONAR PRODUCTO</button>
+      <button type="button" className="CreateNewRowButton my-3">ADICIONAR PRODUCTO</button>
       <hr></hr>
 
-      <table class="table">
+      <table className="table">
           <thead>
               <tr>
                   <th>ID</th>
@@ -29,7 +29,7 @@ function List() {
               </tr>
           </thead>
           <ListRow/>
-          <tbody class="table-group-divider">
+          <tbody className="table-group-divider">
               
           </tbody>
       </table>
