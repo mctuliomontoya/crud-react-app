@@ -8,6 +8,7 @@ Link } from 'react-router-dom';
 import Login from './pages/login.js';
 import Products from './pages/products.js';
 import Shop from './pages/shop.js';
+import Table from './pages/List.js';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "shop",
     element: Shop(),
+  },
+  {
+    path: "List",
+    element: Table(),
   }
 ]);
 
