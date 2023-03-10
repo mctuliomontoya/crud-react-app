@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.TopRow{
+    font-size: 15px;
+}
+
+.ListStock, .RowStock{
+    text-align: center;
+}
+
+.IconButton{
+    border: none;
+    background-color: transparent;
+}
+
+.CreateNewRowButton{
+    border: 1px solid #7749F8;
+    color: #7749F8;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 5px;
+}
