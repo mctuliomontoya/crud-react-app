@@ -4,14 +4,6 @@
   font-family: 'Inter', sans-serif;
 }
 
-.TopRow{
-    font-size: 15px;
-}
-
-.ListStock, .RowStock{
-    text-align: center;
-}
-
 .IconButton{
     border: none;
     background-color: transparent;
@@ -19,8 +11,18 @@
 
 .CreateNewRowButton{
     border: 1px solid #7749F8;
-    color: #7749F8;
-    font-size: 18px;
     background-color: transparent;
+    color: #7749F8;
+    text-decoration: none;
     border-radius: 5px;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.CreateNewRowButton:hover{
+    color: white;
+    background-color: #7749F8;
 }
