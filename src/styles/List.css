@@ -20,6 +20,7 @@
     padding-bottom: 7px;
     padding-left: 25px;
     padding-right: 25px;
+    transition: 0.3s;
 }
 
 .CreateNewRowButton:hover{
