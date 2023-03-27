@@ -35,28 +35,32 @@ export function ListRow(){
         <tbody>
             {data.map((item) => (
                 <tr key={item.id}>
-                    <td>{item.id}</td>
+                    <td className="fw-bold">{item.id}</td>
                     <td>{item.type}</td>
                     <td>{item.name}</td>
                     <td>${item.price}</td>
-                    <td className="ListStock">{item.stock}</td>
-                    <td>
+                    <td className="text-center">{item.stock}</td>
+                    <td className="text-center">
                         <img src={StockImage} alt={StockImage} width="25px"/>
-                        <img src={Edit} alt={Edit} width="25px"/>
-                        <button className="IconButton" onClick={() => ConfirmDelete(item)}><img src={Trash} alt="Trash" width="25px"/></button>
+                    </td>
+                    <td>
+                        <div className="d-flex justify-content-around">
+                            <img src={Edit} alt={Edit} width="25px"/>
+                            <button class="IconButton" onClick={() => ConfirmDelete(item)}><img src={Trash} alt="Trash" width="25px"/></button>
+                        </div>
                     </td>
                 </tr>
             ))}
         </tbody>
         
-        <Modal show={ToDelete !== null} onHide={CloseModel}>
+    <Modal show={ToDelete !== null} onHide={CloseModel}>
         <Modal.Header closeButton>
-        <Modal.Title>Delete Product</Modal.Title>
+            <Modal.Title>Delete Product</Modal.Title>
         </Modal.Header>
         <Modal.Body>Are you sure you want to delete this product </Modal.Body>
         <Modal.Footer>
-        <Button variant="secondary" onClick={CloseModel}>CANCEL</Button>
-        <Button variant="primary" onClick={() => handleDelete(ToDelete.id)}>DELETE</Button>
+            <Button variant="secondary" onClick={CloseModel}>CANCEL</Button>
+            <Button variant="primary" onClick={() => handleDelete(ToDelete.id)}>DELETE</Button>
         </Modal.Footer>
     </Modal>
     </>
