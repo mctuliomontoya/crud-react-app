@@ -13,9 +13,9 @@ function List() {
     <Navbar title="SISWEB" />
     <div className="container text-start col-md-10 offset-md-1">
       <h1 className="my-4 justify-content-center ms-0">Products</h1>
-      <hr></hr>
-      <button type="button" className="CreateNewRowButton my-3">ADICIONAR PRODUCTO</button>
-      <hr></hr>
+      <hr className="mb-5"></hr>
+      <a href="./products" className="CreateNewRowButton">ADICIONAR PRODUCTO</a>
+      <hr className="mt-5"></hr>
 
       <table className="table">
           <thead>
@@ -24,8 +24,9 @@ function List() {
                   <th>TYPE</th>
                   <th>NAME</th>
                   <th>PRICE</th>
-                  <th>IN STOCK</th>
-                  <th>IMAGE</th>
+                  <th className="text-center">IN STOCK</th>
+                  <th className="text-center">IMAGE</th>
+                  <th></th>
               </tr>
           </thead>
           <ListRow/>
