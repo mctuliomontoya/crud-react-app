@@ -39,6 +39,11 @@ export function Navbar({ title }) {
               </a>
             </li>
             <li className="nav-item">
+              <a href="./list" className="nav-link">
+                List
+              </a>
+            </li>
+            <li className="nav-item">
               <button
                 type="button"
                 className="btn btn-outline-light btn-md"
