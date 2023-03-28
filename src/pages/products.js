@@ -8,7 +8,7 @@ import "../styles/styles.css";
 function Greeting() {
   return <h1>Hello world</h1>;
 }
-
+ 
 function Products() {
   return (
     <>
