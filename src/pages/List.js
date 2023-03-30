@@ -10,7 +10,7 @@ function List() {
 
   return(
     <>
-    <Navbar title="SISWEB" />
+    <Navbar />
     <div className="container text-start col-md-10 offset-md-1">
       <h1 className="my-4 justify-content-center ms-0">Products</h1>
       <hr className="mb-5"></hr>

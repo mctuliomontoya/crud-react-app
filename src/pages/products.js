@@ -12,7 +12,7 @@ function Greeting() {
 function Products() {
   return (
     <>
-    <Navbar title="SISWEB" />
+    <Navbar />
     <div className="container">
       <Product />
       {/* <hr />

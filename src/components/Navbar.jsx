@@ -2,15 +2,14 @@
 import './../styles/navbar.css'
 import Button from "react-bootstrap/Button";
 
-export function Navbar({ title }) {
+export function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container-fluid">
         <div className="d-flex flex-grow-1">
           <span className="w-100 d-lg-none d-block"></span>
           <a className="navbar-brand" href="#">
-            {" "}
-            {title}{" "}
+            SISWEB
           </a>
           <div className="w-100 text-right">
             <button

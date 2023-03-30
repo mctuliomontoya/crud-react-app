@@ -14,7 +14,7 @@ function Greeting() {
 function Shop() {
     return(
     <>
-    <Navbar title="SISWEB"/>
+    <Navbar />
     <main>
     <Greeting/>
     <hr></hr>
