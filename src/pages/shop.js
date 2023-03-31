@@ -4,8 +4,6 @@ import { ItemCard } from "../components/ItemCard";
 import { ShoppingCart } from "../components/ShoppingCart";
 import "../styles/styles.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
 function Greeting() {
     return <h1>Shop</h1>
 }
