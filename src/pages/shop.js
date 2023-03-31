@@ -14,7 +14,6 @@ function Greeting() {
 function Shop() {
     return(
     <>
-    <Navbar />
     <main>
     <Greeting/>
     <hr></hr>

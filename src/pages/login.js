@@ -53,7 +53,7 @@ class Login extends React.Component{
             <div className="login-parent">
                 <div className="form-signin container">
                 {this.state.logged && (
-                    <Navigate to="/products" replace={true}/>
+                    <Navigate to="/app/products" replace={true}/>
                 )}
                 <form>
                     <h1>WELCOME TO SISWEB</h1>

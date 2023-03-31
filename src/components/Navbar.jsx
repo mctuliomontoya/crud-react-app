@@ -1,9 +1,11 @@
 // Navbar.js
 import './../styles/navbar.css'
 import Button from "react-bootstrap/Button";
+import {Outlet, Link} from "react-router-dom";
 
 export function Navbar() {
   return (
+    <>
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container-fluid">
         <div className="d-flex flex-grow-1">
@@ -47,7 +49,7 @@ export function Navbar() {
                 type="button"
                 className="btn btn-outline-light btn-md"
               >
-                <a href="./">Logout</a>
+                <a href="/">Logout</a>
               </button>
 
             </li>
@@ -56,5 +58,8 @@ export function Navbar() {
         </div>
       </div>
     </nav>
+
+    <Outlet />
+    </>
   );
 }

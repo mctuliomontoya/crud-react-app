@@ -12,7 +12,6 @@ function Greeting() {
 function Products() {
   return (
     <>
-    <Navbar />
     <div className="container">
       <Product />
       {/* <hr />
