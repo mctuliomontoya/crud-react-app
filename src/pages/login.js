@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import '../styles/login.css';
 
 const listaUsuarios = [

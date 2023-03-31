@@ -2,10 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { ItemCard } from "../components/ItemCard";
 import { ShoppingCart } from "../components/ShoppingCart";
-import {Navbar} from "../components/Navbar";
 import "../styles/styles.css";
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
 
 function Greeting() {
     return <h1>Shop</h1>
