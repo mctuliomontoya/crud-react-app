@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ReactDOM from 'react-dom/client'
-import { Navbar } from "../components/Navbar";
 import { ListRow } from '../components/ListRow';
 import StockImage from "../images/StockImage.png";
 import '../styles/List.css';

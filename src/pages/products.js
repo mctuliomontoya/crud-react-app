@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Product } from "../components/ProductTab";
 import { DualButton } from "../components/DualButton";
-import { Navbar } from "../components/Navbar";
 import "../styles/styles.css";
 
 function Greeting() {
