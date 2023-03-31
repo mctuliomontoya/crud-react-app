@@ -22,13 +22,22 @@ class Login extends React.Component{
     setUsername(event){
         this.setState({
             username: event,
+            errorMessage: '',
         })
     }
 
     setPassword(event){
         this.setState({
             password: event,
+            errorMessage: '',
         })
+    }
+
+    handleEnter(event) {
+        if(event.key == "Enter"){
+            event.preventDefault();
+            console.log(event.key);
+        }
     }
 
     handleLogin(event) {
@@ -62,13 +71,15 @@ class Login extends React.Component{
                     <br></br>
                     <input type="text" 
                     id="username"
-                    onChange={(event) => this.setUsername(event.target.value)}></input>
+                    onChange={(event) => this.setUsername(event.target.value)}
+                    onKeyDown={(event) => this.handleEnter(event)}></input>
                     <br></br>
                     <label htmlFor="password">Password</label>
                     <br></br>
                     <input type="password"
                     id="password"
-                    onChange={(event) => this.setPassword(event.target.value)}></input>
+                    onChange={(event) => this.setPassword(event.target.value)}
+                    onKeyDown={(event) => this.handleEnter(event)}></input>
                     <br></br>
                     <button className="btn btn-primary"
                     onClick={(event) => this.handleLogin(event)}>SIGN IN</button>
