@@ -36,7 +36,6 @@ class Login extends React.Component{
     handleEnter(event) {
         if(event.key == "Enter"){
             event.preventDefault();
-            console.log(event.key);
         }
     }
 
