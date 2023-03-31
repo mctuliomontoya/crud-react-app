@@ -33,12 +33,6 @@ class Login extends React.Component{
         })
     }
 
-    handleEnter(event) {
-        if(event.key == "Enter"){
-            event.preventDefault();
-        }
-    }
-
     handleLogin(event) {
         event.preventDefault();
         this.setState({
@@ -49,6 +43,7 @@ class Login extends React.Component{
                 this.setState({
                     logged: true,
                 });
+                return;
             }
         }
         this.setState({
@@ -70,15 +65,13 @@ class Login extends React.Component{
                     <br></br>
                     <input type="text" 
                     id="username"
-                    onChange={(event) => this.setUsername(event.target.value)}
-                    onKeyDown={(event) => this.handleEnter(event)}></input>
+                    onChange={(event) => this.setUsername(event.target.value)}></input>
                     <br></br>
                     <label htmlFor="password">Password</label>
                     <br></br>
                     <input type="password"
                     id="password"
-                    onChange={(event) => this.setPassword(event.target.value)}
-                    onKeyDown={(event) => this.handleEnter(event)}></input>
+                    onChange={(event) => this.setPassword(event.target.value)}></input>
                     <br></br>
                     <button className="btn btn-primary"
                     onClick={(event) => this.handleLogin(event)}>SIGN IN</button>
