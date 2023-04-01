@@ -4,7 +4,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 import { DualButton } from "./DualButton";
 import ImagePrev from "./Image";
 
-function BasicExample() {
+function BasicEditExample() {
   return (
     <Form>
       <div className="row">
@@ -16,7 +16,7 @@ function BasicExample() {
             <div className="col-md-6">
               <Form.Group className="mb-3" controlId="formBasicID">
                 <Form.Label>ID</Form.Label>
-                <Form.Control type="text" placeholder="" required enabled/>
+                <Form.Control type="text" placeholder="" required disabled/>
               </Form.Group>
             </div>
             <div className="col-md-6">
@@ -78,4 +78,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default BasicEditExample;

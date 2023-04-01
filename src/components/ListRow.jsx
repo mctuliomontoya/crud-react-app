@@ -45,7 +45,7 @@ export function ListRow(){
                     </td>
                     <td>
                         <div className="d-flex justify-content-around">
-                            <img src={Edit} alt={Edit} width="30px"/>
+                            <a href="../app/edit"><img src={Edit} alt={Edit} width="30px"/></a>
                             <button className="IconButton" onClick={() => ConfirmDelete(item)}><img src={Trash} alt="Trash" width="25px"/></button>
                         </div>
                     </td>
